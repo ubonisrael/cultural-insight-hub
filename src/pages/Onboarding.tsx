@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const audiences = ["Gen Z (18–24)", "Millennials (25–40)", "Gen X (41–56)", "Mass Market", "Luxury Consumers", "Diaspora Communities"];
 const categories = ["Fashion & Apparel", "Beauty & Skincare", "Food & Beverage", "Art & Design", "Music & Entertainment", "Lifestyle & Wellness"];
-const priceRanges = ["Budget ($0–$50)", "Mid-Range ($50–$200)", "Premium ($200–$500)", "Luxury ($500+)"];
+const priceRanges = ["Budget (£0–£50)", "Mid-Range (£50–£200)", "Premium (£200–£500)", "Luxury (£500+)"];
 
 const Onboarding = () => {
   const navigate = useNavigate();
@@ -30,7 +30,11 @@ const Onboarding = () => {
         <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-4 h-4" />
         </button>
-        <span className="font-display font-semibold text-lg tracking-tight">CDIP</span>
+        <img
+          src="/Soorente_Logo.avif"
+          alt="Soorente Logo"
+          className="h-24 w-auto"
+        />
         <span className="text-muted-foreground text-sm ml-2">/ Brand Onboarding</span>
       </nav>
 

@@ -21,7 +21,11 @@ const Admin = () => {
         <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-4 h-4" />
         </button>
-        <span className="font-display font-semibold text-lg tracking-tight">CDIP</span>
+        <img
+          src="/Soorente_Logo.avif"
+          alt="Soorente Logo"
+          className="h-24 w-auto"
+        />
         <span className="text-muted-foreground text-sm ml-2">/ Admin</span>
       </nav>
 

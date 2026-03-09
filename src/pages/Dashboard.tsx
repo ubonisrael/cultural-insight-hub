@@ -12,7 +12,7 @@ const fade = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 } };
 const Dashboard = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const brand = (location.state as any) || { brandName: "Asa Studios", audience: "Gen Z (18–24)", category: "Fashion & Apparel", location: "Lagos, London" };
+  const brand = (location.state) || { brandName: "Asa Studios", audience: "Gen Z (18–24)", category: "Fashion & Apparel", location: "Lagos, London" };
   const brandName = brand.brandName || "Asa Studios";
   const resonanceScore = 74;
 
@@ -22,7 +22,11 @@ const Dashboard = () => {
         <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-4 h-4" />
         </button>
-        <span className="font-display font-semibold text-lg tracking-tight">CDIP</span>
+        <img
+          src="/Soorente_Logo.avif"
+          alt="Soorente Logo"
+          className="h-24 w-auto"
+        />
         <span className="text-muted-foreground text-sm ml-2">/ Intelligence Dashboard</span>
       </nav>
 
@@ -36,7 +40,7 @@ const Dashboard = () => {
                 <Stat label="Market" value={brand.location || "Lagos, London"} />
                 <Stat label="Audience" value={brand.audience || "Gen Z (18–24)"} />
                 <Stat label="Category" value={brand.category || "Fashion & Apparel"} />
-                <Stat label="Price Position" value={brand.priceRange || "Premium ($200–$500)"} />
+                <Stat label="Price Position" value={brand.priceRange || "Premium (£200–£500)"} />
               </div>
               <Separator />
               <p className="text-sm text-muted-foreground leading-relaxed">
@@ -107,7 +111,7 @@ const Dashboard = () => {
                 <div className="space-y-4">
                   {[
                     { icon: Target, title: "Refine Narrative Positioning", desc: "Align brand story with audience aspirational identity. Focus on heritage-meets-modernity messaging." },
-                    { icon: TrendingUp, title: "Adjust Entry Price Point", desc: "Introduce a gateway product at $80–$120 to capture price-sensitive cultural consumers." },
+                    { icon: TrendingUp, title: "Adjust Entry Price Point", desc: "Introduce a gateway product at £80–£120 to capture price-sensitive cultural consumers." },
                     { icon: Palette, title: "Increase Storytelling Content Frequency", desc: "Shift from product-led to story-led content. Target 60% narrative, 40% product across channels." },
                     { icon: Eye, title: "Expand Distribution Channels", desc: "Prioritize pop-up retail and cultural events in diaspora hubs for brand awareness." },
                   ].map((rec, i) => (
