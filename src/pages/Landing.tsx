@@ -7,7 +7,7 @@ const Landing = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen flex flex-col">
       {/* Nav */}
       <nav className="border-b border-border px-8 py-5 flex items-center justify-between">
         <img

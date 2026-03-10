@@ -25,7 +25,7 @@ const Onboarding = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <nav className="border-b border-border px-8 py-5 flex items-center gap-4">
         <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-4 h-4" />
