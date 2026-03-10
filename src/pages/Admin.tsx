@@ -6,10 +6,10 @@ import { Badge } from "@/components/ui/badge";
 
 const brands = [
   { name: "Asa Studios", score: 74, category: "Fashion & Apparel", date: "2026-02-14", status: "Active" },
-  { name: "Nkiru Beauty", score: 82, category: "Beauty & Skincare", date: "2026-02-28", status: "Active" },
-  { name: "Olori Living", score: 61, category: "Lifestyle & Wellness", date: "2026-03-01", status: "Active" },
-  { name: "Diaspora Eats", score: 89, category: "Food & Beverage", date: "2026-03-05", status: "Pending" },
-  { name: "Àṣà Sound", score: 45, category: "Music & Entertainment", date: "2026-03-08", status: "Active" },
+  { name: "Ọmọ Couture", score: 82, category: "Fashion & Apparel", date: "2026-02-28", status: "Active" },
+  { name: "Adire Collective", score: 61, category: "Fashion & Apparel", date: "2026-03-01", status: "Active" },
+  { name: "Nkem Atelier", score: 89, category: "Fashion & Apparel", date: "2026-03-05", status: "Pending" },
+  { name: "Ìtàn Threads", score: 45, category: "Fashion & Apparel", date: "2026-03-08", status: "Active" },
 ];
 
 const Admin = () => {
