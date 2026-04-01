@@ -30,11 +30,7 @@ const Onboarding = () => {
         <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
           <ArrowLeft className="w-4 h-4" />
         </button>
-        <img
-          src="/Soorente_Logo.avif"
-          alt="Soorente Logo"
-          className="h-24 w-auto"
-        />
+        <span className="font-display text-2xl font-bold tracking-tight">CDIP</span>
         <span className="text-muted-foreground text-sm ml-2">/ Brand Onboarding</span>
       </nav>
 

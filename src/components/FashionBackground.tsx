@@ -84,7 +84,7 @@ const FashionBackground = () => {
           className="font-display text-[14vw] font-bold tracking-[0.2em] uppercase select-none whitespace-nowrap"
           style={{ color: "#c9a96e08" }}
         >
-          SOORENTE
+          CDIP
         </span>
       </motion.div>
 
