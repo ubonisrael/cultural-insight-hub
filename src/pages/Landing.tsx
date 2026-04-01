@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Landing = () => {
@@ -10,11 +10,7 @@ const Landing = () => {
     <div className="min-h-screen flex flex-col">
       {/* Nav */}
       <nav className="border-b border-border px-8 py-5 flex items-center justify-between">
-        <img
-          src="/Soorente_Logo.avif"
-          alt="Soorente Logo"
-          className="h-24 w-auto"
-        />
+        <span className="font-display text-2xl font-bold tracking-tight">CDIP</span>
         <Button variant="outline" size="sm" onClick={() => navigate("/admin")}>
           Admin
         </Button>
@@ -28,6 +24,16 @@ const Landing = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="max-w-3xl text-center"
         >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card mb-8"
+          >
+            <Sparkles className="w-4 h-4 text-score-mid" />
+            <span className="text-sm font-display font-medium">A New Innovation by Soorente</span>
+          </motion.div>
+
           <p className="text-sm font-display uppercase tracking-[0.2em] text-muted-foreground mb-6">
             Cultural Design Intelligence Platform
           </p>
@@ -59,7 +65,7 @@ const Landing = () => {
 
       {/* Bottom bar */}
       <footer className="border-t border-border px-8 py-4 flex items-center justify-between text-xs text-muted-foreground">
-        <span>© 2026 Soorente</span>
+        <span>© 2026 Soorente — CDIP Platform</span>
         <button
           onClick={() => navigate("/data-layer")}
           className="hover:text-foreground transition-colors"
